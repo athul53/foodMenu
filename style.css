@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?food') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%;
+}
+
+#menu .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#menu .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#order-summary {
+    top: 86px;
+}
+
+#order-items .list-group-item {
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+}
+
+#place-order-btn {
+    transition: transform 0.3s ease;
+}
+
+#place-order-btn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+    #order-summary {
+        position: static;
+        margin-top: 30px;
+    }
+}
